@@ -21,7 +21,7 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title(" Bug Fixer Accounts Service").description("This Service can be used to get profile level actions and information for an Account").version("v1.0").build();
+        return new ApiInfoBuilder().title(" Bug Fixer Account Api").description("This Api can be used to get profile level actions and information for an Account").version("v1.0").build();
 
     }
 }
