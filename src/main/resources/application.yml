@@ -1,11 +1,13 @@
 spring:
-    application:
-        name: ACCOUNTS-SERVICE
-    r2dbc:
-        url: r2dbc:postgresql://localhost:5432/accounts
-        username: postgres
-        password: postgres
-    eureka:
-        client:
-            registerWithEureka: true
-            fetchRegistry: true
+  config:
+    import: "configserver:http://localhost:8888/"
+  application:
+    name: account-service
+  profiles:
+    active: "dev"
+
+
+
+
+
+
