@@ -12,7 +12,9 @@ public class Account {
     @Column
     private long account_id;
     @Column
-    private String name;
+    private String fname;
+    @Column
+    private String lname;
     @Column
     private String email;
     @Column

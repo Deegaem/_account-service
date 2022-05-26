@@ -32,7 +32,8 @@ public class AccountsResource {
     @PutMapping({"/{accountId}"})
     public Mono<Account> putAccount(@PathVariable("accountId") Long accountId, @RequestBody Account account) {
         return accountRepository.findById(accountId).map((c) -> {
-            c.setName(account.getName());
+            c.setFname(account.getFname());
+            c.setLname(account.getLname());
             c.setEmail(account.getEmail());
             c.setUsername(account.getUsername());
             c.setPassword(account.getPassword());
